@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:ExpandHitTestArea/ExpandHitTestArea.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:NavigationBarShadow/NavigationBarShadow.xcodeproj">
    </FileRef>
    <FileRef
