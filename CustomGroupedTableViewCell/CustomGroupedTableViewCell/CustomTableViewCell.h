@@ -12,6 +12,5 @@
 @interface CustomTableViewCell : UITableViewCell
 
 @property (nonatomic, strong) CustomCellBackgroundView *customBackgroundView;
-@property (nonatomic, strong) CustomCellBackgroundView *highlightedCustomBackgroundView;
 
 @end

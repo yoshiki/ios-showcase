@@ -23,8 +23,8 @@
         self.horizontalGap = horizontalGap;
         self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0.0f,
                                                                        0.0f,
-                                                                       CGRectGetWidth(self.frame) + self.horizontalGap*2,
-                                                                       CGRectGetHeight(self.frame) + self.verticalGap*2)];
+                                                                       self.horizontalGap + CGRectGetWidth(self.frame) + self.horizontalGap,
+                                                                       self.verticalGap + CGRectGetHeight(self.frame) + self.verticalGap)];
         self.imageView.image = image;
         self.imageView.highlightedImage = highlightedImage;
         [self addSubview:self.imageView];
@@ -63,13 +63,8 @@
 }
 
 - (void)resetHeightTo:(CGFloat)cellHeight verticalGap:(CGFloat)verticalGap {
-    CGRect frame = self.frame;
-    frame.size.height = cellHeight;
-    self.frame = frame;
-	
 	CGRect newFrame = self.imageView.frame;
 	newFrame.size.height = (cellHeight + verticalGap * 2);
-	
 	self.imageView.frame = newFrame;
 }
 

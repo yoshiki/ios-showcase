@@ -12,8 +12,7 @@ typedef enum {
     CustomCellBackgroundViewPositionTop,
     CustomCellBackgroundViewPositionMiddle,
     CustomCellBackgroundViewPositionBottom,
-    CustomCellBackgroundViewPositionSingle,
-    CustomCellBackgroundViewPositionPlain
+    CustomCellBackgroundViewPositionSingle
 } CustomCellBackgroundViewPosition;
 
 @interface CustomCellBackgroundView : UIView

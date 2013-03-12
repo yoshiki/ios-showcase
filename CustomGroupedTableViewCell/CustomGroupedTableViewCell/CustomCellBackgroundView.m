@@ -9,6 +9,8 @@
 #import "CustomCellBackgroundView.h"
 #import "ClipImageView.h"
 
+#define kCustomCellHeight 44.0f
+
 @interface CustomCellBackgroundView ()
 
 @property (nonatomic, strong) ClipImageView *clipImageView;
@@ -32,7 +34,7 @@
         
         self.separatorLineView = [[self class] viewWithImage:[UIImage imageNamed:@"line"] height:2.0f];
         [self addSubview:self.separatorLineView];
-        [self.separatorLineView setFrame:CGRectMake(1.0f, 44.0f, CGRectGetWidth(self.frame) - 2.0f, 2.0f)];
+        [self.separatorLineView setFrame:CGRectMake(1.0f, kCustomCellHeight, CGRectGetWidth(self.frame) - 2.0f, 2.0f)];
     }
     return self;
 }
@@ -82,10 +84,10 @@
     if (separatorHidden) {
         [self.separatorLineView setHidden:separatorHidden];
     } else {
-        [self setSeparatorLinePosition:44.0f];
+        [self setSeparatorLinePosition:kCustomCellHeight];
     }
     
-    [self.clipImageView resetHeightTo:44.0f verticalGap:verticalGap];
+    [self.clipImageView resetHeightTo:kCustomCellHeight verticalGap:verticalGap];
 }
 
 - (void)setHighlighted:(BOOL)highlighted {
