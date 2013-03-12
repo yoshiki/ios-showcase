@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:CustomGroupedTableViewCell/CustomGroupedTableViewCell.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ExpandHitTestArea/ExpandHitTestArea.xcodeproj">
    </FileRef>
    <FileRef
