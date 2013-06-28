@@ -294,6 +294,7 @@
 				FC9B8D5B16EEE04300250C65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

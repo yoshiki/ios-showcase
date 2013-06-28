@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SelectableActionSheet/SelectableActionSheet.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CustomBackBarButtonItem/CustomBackBarButtonItem.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:CustomGroupedTableViewCell/CustomGroupedTableViewCell.xcodeproj">
    </FileRef>
    <FileRef
